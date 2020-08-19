@@ -1,1 +1,1 @@
-# WesterBorealInitiative
+# Western Boreal Initiative
