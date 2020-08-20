@@ -23,7 +23,7 @@ canProvs <- Cache(prepInputs,
                   fun = "base::readRDS",
                   dlFun = "raster::getData",
                   country = "CAN", level = 1, path = dPath,
-                  targetCRS = targetCRS,
+                  #targetCRS = targetCRS, ## TODO: fails on Windows
                   targetFile = "gadm36_CAN_1_sp.rds", ## TODO: this will change as GADM data update
                   cacheRepo = cPath,
                   destinationPath = dPath) %>%
