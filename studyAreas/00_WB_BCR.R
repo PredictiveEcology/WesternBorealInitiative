@@ -41,4 +41,3 @@ plot(studyArea)
 
 shapefile(studyArea, "studyAreas/WB_BCR.shp")
 #zip(file.path("studyAreas/WB_BCR.zip"), list.files("studyAreas", pattern = "WB_BCR")) ## TODO
-
