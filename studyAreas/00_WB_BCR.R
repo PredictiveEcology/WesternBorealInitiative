@@ -29,9 +29,10 @@ canProvs <- Cache(prepInputs,
                   destinationPath = dPath) %>%
   st_as_sf(.)
 
+WB <- c("British Columbia", "Alberta", "Saskatchewan", "Manitoba",
+        "Yukon", "Northwest Territories", "Nunavut")
 bcrWB <- bcrshp[bcrshp$BCR %in% c(4, 6:8), ]
-provsWB <- canProvs[canProvs$NAME_1 %in% c("British Columbia", "Alberta", "Saskatchewan", "Manitoba",
-                                           "Yukon", "Northwest Territories", "Nunavut"), ]
+provsWB <- canProvs[canProvs$NAME_1 %in% WB, ]
 
 studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo = cPath,
                          filename2 = NULL, overwrite = TRUE) %>%
