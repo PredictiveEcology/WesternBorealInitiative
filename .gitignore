@@ -37,3 +37,10 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+studyAreas/cache/
+studyAreas/data/
+studyAreas/*.dbf
+studyAreas/*.prj
+studyAreas/*.shp
+studyAreas/*.shx
