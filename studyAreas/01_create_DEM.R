@@ -7,7 +7,9 @@ install_github("PredictiveEcology/climateData@development")
 
 library("climateData")
 
-lapply(WB, function(prov) {
+# Western Boreal ------------------------------------------------------------------------------
+
+dem_wb <- lapply(WB, function(prov) {
   makeClimateDEM(
     studyArea = studyArea[studyArea$NAME_1 == prov, ],
     arcSecRes = c(180, 180),
@@ -17,3 +19,16 @@ lapply(WB, function(prov) {
     filename2 = prov
   )
 })
+
+# Ontario -------------------------------------------------------------------------------------
+
+ON <- canProvs[canProvs$NAME_1 %in% "Ontario", ] %>% as_Spatial(.)
+
+dem_on <- makeClimateDEM(
+  studyArea = ON,
+  arcSecRes = c(180, 180),
+  bufferArcSec = 180,
+  DEMdestinationPath = "studyAreas/data",
+  destinationPath = "studyAreas/data",
+  filename2 = "Ontario"
+)
