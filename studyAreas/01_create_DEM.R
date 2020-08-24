@@ -9,11 +9,25 @@ library("climateData")
 
 # Western Boreal ------------------------------------------------------------------------------
 
-dem_wb <- lapply(WB, function(prov) {
+ids <- which(WB %in% c("British Columbia", "Yukon"))
+wb1 <- WB[-ids] # omit BC and YT here; will use higher res DEM for those.
+dem_wb1 <- lapply(wb1, function(prov) {
   makeClimateDEM(
     studyArea = studyArea[studyArea$NAME_1 == prov, ],
     arcSecRes = c(180, 180),
     bufferArcSec = 180,
+    DEMdestinationPath = "studyAreas/data",
+    destinationPath = "studyAreas/data",
+    filename2 = prov
+  )
+})
+
+wb2 <- WB[ids] # BC and YT
+dem_wb2 <- lapply(wb2, function(prov) {
+  makeClimateDEM(
+    studyArea = studyArea[studyArea$NAME_1 == prov, ],
+    arcSecRes = c(60, 60),
+    bufferArcSec = 60,
     DEMdestinationPath = "studyAreas/data",
     destinationPath = "studyAreas/data",
     filename2 = prov
