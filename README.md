@@ -2,7 +2,7 @@
 
 ### Project Highlights
 
-<p align="center">
+<p>
 <img src="https://drive.google.com/uc?export=view&id=1m6ofEW4iRyBlPke2WVtxA4i0ki45wv5z" style="float:right;width:640px;">
 </p>
 
