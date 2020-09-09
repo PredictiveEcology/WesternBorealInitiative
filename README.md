@@ -11,10 +11,10 @@ The proposed project will integrate the best available data, meta-modeling tools
 ### Project overview
 Modelling cumulative effects (CE) implies that we can measure and forecast current and future consequences of multiple stressors such as wildfires, pests, forestry and other anthropogenic disturbances, and climate change on the ecosystem services supplied by Canada’s forests. As the number of natural and human-caused disturbances change, CE require evaluation of land and forest management interactions, while also assessing the implications of shifting prioritization among more than one forest value (e.g., woodland caribou, other Species at Risk (SAR), timber supply, carbon, and downstream economic values). This is a critical issue for all jurisdictions in Canada and requires large multidisciplinary and collaborative efforts based on sound scientific and socio-economic research. This Western Boreal project represents an ambitious spatial expansion and diversification of forest values from our pilot project in Northwest Territories (Micheletti et al. in prep, Stewart et al. in prep, Micheletti et al. 2019a) (Figure 1).
 
-<div class="image">
-<img src="https://drive.google.com/uc?export=view&id=19U_VBsFT6E_0R-_no3DP2ve64uEAQRIX" width="480" align="right">
-<br>
-  Figure 1. Framework proposed for development of the proposed project expansion. The arrows indicate the flow of information, from module inputs through to module outputs, and results. Each hexagon represents a module, or family of SpaDES modules.
+<div class="floatright">
+<img src="https://drive.google.com/uc?export=view&id=19U_VBsFT6E_0R-_no3DP2ve64uEAQRIX" width="480">
+<span class="caption">Figure 1. Framework proposed for development of the proposed project expansion. The arrows indicate the flow of information, from module inputs through to module outputs, and results. Each hexagon represents a module, or family of SpaDES modules.</span>  
+  
 </div>
 
 
