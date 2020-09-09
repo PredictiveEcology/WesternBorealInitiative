@@ -13,7 +13,8 @@ Modelling cumulative effects (CE) implies that we can measure and forecast curre
 
 <div class="image">
 <img src="https://drive.google.com/uc?export=view&id=19U_VBsFT6E_0R-_no3DP2ve64uEAQRIX" width="480" align="right">
-<div>Figure 1. Framework proposed for development of the proposed project expansion. The arrows indicate the flow of information, from module inputs through to module outputs, and results. Each hexagon represents a module, or family of SpaDES modules.</div>
+<br>
+  Figure 1. Framework proposed for development of the proposed project expansion. The arrows indicate the flow of information, from module inputs through to module outputs, and results. Each hexagon represents a module, or family of SpaDES modules.
 </div>
 
 
