@@ -36,7 +36,8 @@ provsWB <- canProvs[canProvs$NAME_1 %in% WB, ]
 
 studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo = cPath,
                          filename2 = NULL, overwrite = TRUE) %>%
-  as_Spatial(.)
+  as_Spatial(.) %>%
+  amc::outerBuffer(., 20000) ## 20 km buffer
 
 plot(studyArea)
 
