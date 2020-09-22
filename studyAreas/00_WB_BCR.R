@@ -29,8 +29,10 @@ canProvs <- Cache(prepInputs,
                   destinationPath = dPath) %>%
   st_as_sf(.)
 
-WB <- c("British Columbia", "Alberta", "Saskatchewan", "Manitoba",
-        "Yukon", "Northwest Territories", "Nunavut")
+provs <- c("British Columbia", "Alberta", "Saskatchewan", "Manitoba")
+terrs <- c("Yukon", "Northwest Territories", "Nunavut")
+WB <- c(provs, terrs)
+
 bcrWB <- bcrshp[bcrshp$BCR %in% c(4, 6:8), ]
 provsWB <- canProvs[canProvs$NAME_1 %in% WB, ]
 
