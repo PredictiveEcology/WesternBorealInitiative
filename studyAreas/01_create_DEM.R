@@ -3,7 +3,7 @@ stopifnot(Sys.info()["sysname"] == "Windows")
 
 source("studyAreas/00_WB_BCR.R")
 
-install_github("PredictiveEcology/climateData@development")
+#install_github("PredictiveEcology/climateData@development")
 
 library("climateData")
 
@@ -36,7 +36,7 @@ dem_wb2 <- lapply(wb2, function(prov) {
 
 # Ontario -------------------------------------------------------------------------------------
 
-ON <- canProvs[canProvs$NAME_1 %in% "Ontario", ] %>% as_Spatial(.)
+ON <- canProvs[canProvs$NAME_1 == "Ontario", ] %>% as_Spatial(.)
 
 dem_on <- makeClimateDEM(
   studyArea = ON,

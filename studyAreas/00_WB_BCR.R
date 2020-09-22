@@ -3,7 +3,6 @@ library(sf)
 library(sp)
 library(raster)
 library(reproducible)
-library(amc)
 
 bcrzip <- "https://www.birdscanada.org/download/gislab/bcr_terrestrial_shape.zip"
 
@@ -37,8 +36,7 @@ provsWB <- canProvs[canProvs$NAME_1 %in% WB, ]
 
 studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo = cPath,
                          filename2 = NULL, overwrite = TRUE) %>%
-  as_Spatial(.) %>%
-  amc::outerBuffer(., 20000) ## 20 km buffer
+  as_Spatial(.)
 
 plot(studyArea)
 
