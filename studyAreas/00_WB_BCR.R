@@ -3,6 +3,7 @@ library(sf)
 library(sp)
 library(raster)
 library(reproducible)
+library(amc)
 
 bcrzip <- "https://www.birdscanada.org/download/gislab/bcr_terrestrial_shape.zip"
 
