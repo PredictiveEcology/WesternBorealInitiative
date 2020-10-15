@@ -27,7 +27,8 @@ canProvs <- Cache(prepInputs,
                   targetFile = "gadm36_CAN_1_sp.rds", ## TODO: this will change as GADM data update
                   cacheRepo = cPath,
                   destinationPath = dPath) %>%
-  st_as_sf(.)
+  st_as_sf(.) %>%
+  st_transform(., targetCRS)
 
 provs <- c("British Columbia", "Alberta", "Saskatchewan", "Manitoba")
 terrs <- c("Yukon", "Northwest Territories", "Nunavut")
