@@ -43,5 +43,5 @@ studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo 
 
 plot(studyArea)
 
-shapefile(studyArea, "studyAreas/WB_BCR.shp")
+shapefile(studyArea, "studyAreas/WB_BCR.shp", overwrite = TRUE)
 #zip(file.path("studyAreas/WB_BCR.zip"), list.files("studyAreas", pattern = "WB_BCR")) ## TODO
