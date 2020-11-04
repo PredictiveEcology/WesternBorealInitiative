@@ -4,6 +4,8 @@
 
 ## Western Boreal Initiative
 
+[![Gitter](https://badges.gitter.im/PredictiveEcology/western_boreal.svg)](https://gitter.im/PredictiveEcology/western_boreal?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ### Project overview
 Modelling cumulative effects (CE) implies that we can measure and forecast current and future consequences of multiple stressors such as wildfires, pests, forestry and other anthropogenic disturbances, and climate change on the ecosystem services supplied by Canada’s forests. As the number of natural and human-caused disturbances change, CE require evaluation of land and forest management interactions, while also assessing the implications of shifting prioritization among more than one forest value (e.g., woodland caribou, other Species at Risk (SAR), timber supply, carbon, and downstream economic values). This is a critical issue for all jurisdictions in Canada and requires large multidisciplinary and collaborative efforts based on sound scientific and socio-economic research. This Western Boreal project represents an ambitious spatial expansion and diversification of forest values from a pilot project in Northwest Territories (Micheletti et al. in prep, Stewart et al. in prep, Micheletti et al. 2019a).
 
