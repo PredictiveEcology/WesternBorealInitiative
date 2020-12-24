@@ -8,7 +8,6 @@ climateDataDir <- normalizePath("~/data/climate/ClimateNA_data")
 
 # Western Boreal ------------------------------------------------------------------------------
 
-## Provinces
 mdc_wb1 <- lapply(c(provs, terrs), function(x) {
   dir1 <- file.path(climateDataDir, "historic_1991-2019", x)
   mdc1 <- makeMDC(inputPath = dir1, years = 1991:2019)
