@@ -43,7 +43,7 @@ dem_wb2 <- lapply(wb2, function(prov) {
 
 id <- which(terrs == "Yukon")
 wb3 <- terrs[-id] # omit YT here; will use higher res DEM for those.
-dem_wb1 <- lapply(wb1, function(terr) {
+dem_wb3 <- lapply(wb1, function(terr) {
   makeClimateDEM(
     studyArea = studyArea[studyArea$NAME_1 == terr, ],
     arcSecRes = c(180, 180),
@@ -55,7 +55,7 @@ dem_wb1 <- lapply(wb1, function(terr) {
 })
 
 wb4 <- terrs[id] # YT
-dem_wb2 <- lapply(wb2, function(terr) {
+dem_wb4 <- lapply(wb2, function(terr) {
   makeClimateDEM(
     studyArea = studyArea[studyArea$NAME_1 == terr, ],
     arcSecRes = c(60, 60),
