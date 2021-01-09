@@ -8,7 +8,7 @@ climateDataDir <- normalizePath("~/data/climate/ClimateNA_data")
 
 # Western Boreal ------------------------------------------------------------------------------
 
-mdc_wb1 <- lapply(c(provs, terrs), function(x) {
+mdc_wb1 <- lapply(c(provs, "Yukon", paste(wb3, collapse = " & ")), function(x) {
   message("Processing historic MDC rasters for study area: ", x)
   dir1 <- file.path(climateDataDir, "historic_1991-2019", x)
   mdc1 <- makeMDC(inputPath = dir1, years = 1991:2019)

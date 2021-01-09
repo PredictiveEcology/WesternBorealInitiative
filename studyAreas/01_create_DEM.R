@@ -43,16 +43,16 @@ dem_wb2 <- lapply(wb2, function(prov) {
 
 id <- which(terrs == "Yukon")
 wb3 <- terrs[-id] # omit YT here; will use higher res DEM for those.
-dem_wb3 <- lapply(wb1, function(terr) {
+dem_wb3 <- list(
   makeClimateDEM(
-    studyArea = studyArea[studyArea$NAME_1 == terr, ],
+    studyArea = studyArea[studyArea$NAME_1 %in% wb3, ], ## run NT & NU together
     arcSecRes = c(180, 180),
     bufferArcSec = buffTerrs,
     DEMdestinationPath = "studyAreas/data",
     destinationPath = "studyAreas/data",
-    filename2 = terr
+    filename2 = paste(wb3, collapse = " & ")
   )
-})
+)
 
 wb4 <- terrs[id] # YT
 dem_wb4 <- lapply(wb2, function(terr) {
