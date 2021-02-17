@@ -41,7 +41,8 @@ studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo 
                          filename2 = NULL, overwrite = TRUE) %>%
   as_Spatial(.)
 
-plot(studyArea)
+plot(as_Spatial(canProvs))
+plot(studyArea, col = "lightblue", add = TRUE)
 
 shapefile(studyArea, "studyAreas/WB_BCR.shp", overwrite = TRUE)
 #zip(file.path("studyAreas/WB_BCR.zip"), list.files("studyAreas", pattern = "WB_BCR")) ## TODO
