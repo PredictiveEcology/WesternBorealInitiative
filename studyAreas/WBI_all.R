@@ -6,36 +6,36 @@
 Require("ggmap")
 Require("ggspatial")
 
+cols.bord <- c("blue", "brown", "goldenrod", "darkgreen", "magenta") ## TODO: tweak colours
+cols.fill <- c("lightblue", "brown", "goldenrod", "darkgreen", "pink") ## TODO: tweak colours
+
 png("figures/all_studyAreas.png", width = 1200, height = 800)
 plot(studyArea)
-plot(aggregate(bcr6_nt1), add = TRUE, col = "lightblue")  ## caribou RSF
-plot(aggregate(studyAreaMPB), add = TRUE, col = "brown")  ## MPB
-plot(studyAreaSBW, add = TRUE, col = "orange")            ## SBW
-plot(aggregate(ria), add = TRUE, col = "darkgreen")       ## carbon + harvesting
-plot(metaHerds, add = TRUE, col = "pink")                 ## caribou lambda
+plot(bcr6_nt1, add = TRUE, col = cols.fill[1])  ## caribou RSF
+plot(studyAreaMPB, add = TRUE, col = cols.fill[2])  ## MPB
+plot(studyAreaSBW, add = TRUE, col = cols.fill[3]) ## SBW
+plot(ria, add = TRUE, col = cols.fill[4])       ## carbon + harvesting
+plot(metaHerds, add = TRUE, col = cols.fill[5])      ## caribou lambda
 dev.off()
 
 ## ggplot version
-gg_all <- ggplot(studyArea) +
-  geom_polygon(data = fortify(studyArea),
-               aes(long, lat, group = group),
-               fill = "grey", colour = "black", alpha = 0.2) +
-  geom_polygon(data = fortify(aggregate(bcr6_nt1)),
-               aes(long, lat, group = group),
-               fill = "lightblue", colour = "blue", alpha = 0.2) +
-  geom_polygon(data = fortify(aggregate(studyAreaMPB)),
-               aes(long, lat, group = group),
-               fill = "brown", colour = "brown", alpha = 0.2) +
-  geom_polygon(data = fortify(studyAreaSBW),
-               aes(long, lat, group = group),
-               fill = "orange", colour = "orange", alpha = 0.2) +
-  geom_polygon(data = fortify(aggregate(ria)),
-               aes(long, lat, group = group),
-               fill = "darkgreen", colour = "darkgreen", alpha = 0.2) +
-  geom_polygon(data = fortify(metaHerds),
-               aes(long, lat, group = group),
-               fill = "pink", colour = "magenta", alpha = 0.2) +
-  ## TODO: add legend
-  theme_bw()
+alpha <- 0.5
+gg_all <- ggplot(st_as_sf(studyArea)) +
+  theme_bw() +
+  geom_sf(fill = "grey", colour = "black", alpha = alpha) +
+  annotation_north_arrow(location = "bl", which_north = "true",
+                         pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  xlab("Longitude") + ylab("Latitude") +
+  ggtitle("Western Boreal Initiative Study Areas") +
+  geom_sf(data = bcr6_nt1, fill = cols.fill[1], colour = cols.bord[1], alpha = alpha) +
+  geom_sf(data = studyAreaMPB, fill = cols.fill[2], colour = cols.bord[2], alpha = alpha) +
+  geom_sf(data = studyAreaSBW, fill = cols.fill[3], colour = cols.bord[3], alpha = alpha) +
+  geom_sf(data = ria, fill = cols.fill[4], colour = cols.bord[4], alpha = alpha) +
+  geom_sf(data = metaHerds, fill = cols.fill[5], colour = cols.bord[5], alpha = alpha)# +
+  # scale_fill_manual(name = "Study Area", values = cols.fill,
+  #                   guide = guide_legend(override.aes = list(shape = rep(15, length(cols.fill)),
+  #                                                            color = cols.fill, alpha = alpha, size = 8)))
+  ## TODO: need legend
 
 ggsave(gg_all, filename = "figures/all_studyAreas_gg.png", width = 12, height = 8)

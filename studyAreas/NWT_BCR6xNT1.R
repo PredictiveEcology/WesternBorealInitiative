@@ -9,7 +9,10 @@ bcr6_nt1 <- prepInputs(
   cacheRepo = cPath,
   destinationPath = dPath
 ) %>%
-  as_Spatial(.)
+  as_Spatial(.) %>%
+  aggregate(.) %>%
+  st_as_sf(.) %>%
+  st_buffer(., 0)
 
 png("figures/bcr6_nt1.png", width = 1000, height = 800, type = "cairo")
 plot(studyArea)

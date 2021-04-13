@@ -8,12 +8,13 @@ plot(ecoregions[ecoregions$REGION_ID %in% c(120), ], add = TRUE, col = "darkred"
 dev.off()
 
 ## study areas
-studyAreaMPB <- ecoregions[ecoregions$REGION_ID %in% c(112, 122, 124, 126), ]
-studyAreaMPBFit <- ecoregions[ecoregions$REGION_ID %in% c(120), ]
-studyAreaMPBLarge <- buffer(studyAreaMPB, 10000) ## 10 km buffer
+studyAreaMPB <- ecoregions[ecoregions$REGION_ID %in% c(112, 122, 124, 126), ] %>%
+  aggregate(.) %>%
+  st_as_sf(.)
+studyAreaMPBFit <- ecoregions[ecoregions$REGION_ID %in% c(120), ] %>% st_as_sf(.)
 
 png("figures/mpb_studyArea.png", width = 1000, height = 800)
 plot(studyArea)
 plot(studyAreaMPB, add = TRUE, col = "lightblue")
-plot(studyAreaMPBLarge, add = TRUE)
+#plot(studyAreaMPBFit, add = TRUE, col = "purple")
 dev.off()

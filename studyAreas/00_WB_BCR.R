@@ -1,8 +1,8 @@
-library(magrittr)
-library(sf)
-library(sp)
-library(raster)
-library(reproducible)
+library(Require)
+Require("sf")
+Require("sp")
+Require("raster")
+Require("reproducible")
 
 bcrzip <- "https://www.birdscanada.org/download/gislab/bcr_terrestrial_shape.zip"
 

@@ -11,7 +11,10 @@ metaHerds <- prepInputs(
   targetCRS = targetCRS,
   studyArea = studyArea
 ) %>%
-  intersect(., studyArea)
+  intersect(., studyArea) %>%
+  st_as_sf()
 
+png("figures/caribou.png", width = 1000, height = 800, type = "cairo")
 plot(studyArea)
-plot(metaHerds, add = TRUE, col = "pink")
+plot(as_Spatial(metaHerds), add = TRUE, col = "pink")
+dev.off()
