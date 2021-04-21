@@ -15,7 +15,9 @@ ria <- Cache(
   aggregate(.) %>%
   st_as_sf(.)
 
+ria_wb <- st_intersection(st_as_sf(studyArea), ria)
+
 png("figures/RIA.png", width = 1000, height = 800, type = "cairo")
 plot(studyArea)
-plot(as_Spatial(ria), add = TRUE, col = "darkgreen")
+plot(as_Spatial(ria_wb), add = TRUE, col = "darkgreen")
 dev.off()

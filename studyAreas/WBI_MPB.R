@@ -11,7 +11,9 @@ dev.off()
 studyAreaMPB <- ecoregions[ecoregions$REGION_ID %in% c(112, 122, 124, 126), ] %>%
   aggregate(.) %>%
   st_as_sf(.)
-studyAreaMPBFit <- ecoregions[ecoregions$REGION_ID %in% c(120), ] %>% st_as_sf(.)
+studyAreaMPBFit <- ecoregions[ecoregions$REGION_ID %in% c(120), ] %>%
+  st_as_sf(.) %>%
+  st_intersection(., st_as_sf(studyArea))
 
 png("figures/mpb_studyArea.png", width = 1000, height = 800)
 plot(studyArea)
