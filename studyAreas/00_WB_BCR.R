@@ -1,8 +1,5 @@
 library(Require)
-Require("sf")
-Require("sp")
-Require("raster")
-Require("reproducible")
+Require(c("sf", "sp", "raster", "reproducible"))
 
 bcrzip <- "https://www.birdscanada.org/download/gislab/bcr_terrestrial_shape.zip"
 
@@ -46,7 +43,7 @@ bcrWB <- bcrshp[bcrshp$BCR %in% c(4, 6:8), ]
 provsWB <- canProvs[canProvs$NAME_1 %in% WB, ]
 
 studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo = cPath,
-                         filename2 = NULL, overwrite = TRUE) %>%
+                         filename2 = NULL, overwrite = TRUE) %>% ## TODO: selfintersection issues
   as_Spatial(.)
 
 plot(as_Spatial(canProvs))
@@ -56,7 +53,7 @@ shapefile(studyArea, "studyAreas/WB_BCR.shp", overwrite = TRUE)
 #zip(file.path("studyAreas/WB_BCR.zip"), list.files("studyAreas", pattern = "WB_BCR")) ## TODO
 
 if (FALSE) { # This will produce a sort of nice-ish map of the study area
-  library(ggmap)  # you may have to use install.packages to install it first
+  Require(c("ggplot2", "ggmap"))
 
   ## TODO: what is `sa2`?
   bigger <- raster::buffer(as(extent(sa2), "SpatialPolygons") , 1)
