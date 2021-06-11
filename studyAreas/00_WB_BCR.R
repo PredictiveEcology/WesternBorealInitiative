@@ -1,5 +1,5 @@
 library(Require)
-Require(c("sf", "sp", "raster", "reproducible"))
+Require(c("sf", "sp", "raster", "RColorBrewer", "reproducible"))
 
 bcrzip <- "https://www.birdscanada.org/download/gislab/bcr_terrestrial_shape.zip"
 
@@ -46,24 +46,35 @@ studyArea <- postProcess(provsWB, studyArea = bcrWB, useSAcrs = TRUE, cacheRepo 
                          filename2 = NULL, overwrite = TRUE) %>% ## TODO: selfintersection issues
   as_Spatial(.)
 
+## combine NT and NU in shapefile
+studyAreaCombined <- studyArea[, "NAME_1"]
+ids <- which(studyAreaCombined[["NAME_1"]] %in% c("Northwest Territories", "Nunavut"))
+studyAreaCombined[["NAME_1"]][ids] <- "Northwest Territories & Nunavut"
+studyAreaCombined <- raster::aggregate(studyAreaCombined, by = "NAME_1")
+plot(studyAreaCombined)
+
+shapefile(studyAreaCombined, "studyAreas/WB_BCR.shp", overwrite = TRUE)
+zip(file.path("studyAreas/WB_BCR.zip"), list.files("studyAreas", pattern = "^WB_BCR", full.names = TRUE))
+
+## basic plot
+colours <- RColorBrewer::brewer.pal(length(studyAreaCombined[["NAME_1"]]), "Spectral")
 plot(as_Spatial(canProvs))
-plot(studyArea, col = "lightblue", add = TRUE)
+plot(studyAreaCombined, col = colours, add = TRUE)
 
-shapefile(studyArea, "studyAreas/WB_BCR.shp", overwrite = TRUE)
-#zip(file.path("studyAreas/WB_BCR.zip"), list.files("studyAreas", pattern = "WB_BCR")) ## TODO
+# nicer plot ----------------------------------------------------------------------------------
 
-if (FALSE) { # This will produce a sort of nice-ish map of the study area
-  Require(c("ggplot2", "ggmap"))
+Require(c("ggplot2", "ggspatial"))
 
-  ## TODO: what is `sa2`?
-  bigger <- raster::buffer(as(extent(sa2), "SpatialPolygons") , 1)
-  b <- bbox(bigger)
-  saGMap <- get_map(location = b)
+alpha <- 0.3
+gg_wbi <- ggplot(provsWB[-which(provsWB$NAME_1 == "Nunavut"), ]) +
+  geom_sf(fill = "white", colour = "black", alpha = alpha) +
+  theme_bw() +
+  annotation_north_arrow(location = "bl", which_north = "true",
+                         pad_x = unit(0.25, "in"), pad_y = unit(0.25, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  xlab("Longitude") + ylab("Latitude") +
+  ggtitle("Western Boreal Initiative Study Areas") +
+  geom_sf(data = st_as_sf(studyAreaCombined), fill = colours, colour = "black", alpha = alpha)
+## TODO: need legend
 
-  ggmap(saGMap) +
-    geom_polygon(data = fortify(sa2),
-                 aes(long, lat, group = group),
-                 fill = "orange", colour = "red", alpha = 0.2) +
-    theme_bw() #+
-    #coord_proj(proj="albers", x = 50, y = 65) # Didn't reproject the basemap!
-}
+ggsave(gg_wbi, filename = "figures/WBI_studyArea_gg.png", width = 12, height = 8)
