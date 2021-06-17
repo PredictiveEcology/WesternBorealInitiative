@@ -20,27 +20,54 @@ The Western Boreal Initiative is a collaborative co-production between multiple 
 
 ## Implementation Team
 
+- Ceres Barros (UBC)
+- Celine Boisvenue (NRCAN-CFS)
+- Alex Chubaty (FOR-CAST Research & Analytics)
+- Steve Cumming (ULaval)
+- Ian Eddy (NRCAN-CFS)
+- Josie Hughes (ECCC-STB)
+- Isolde Lane-Shaw (ULaval)
 - Eliot McIntire (NRCAN-CFS)
 - Tati Micheletti (UBC)
-- Alex Chubaty (FOR-CAST Research & Analytics)
-- Ian Eddy (NRCAN-CFS)
-- Ceres Barros (UBC)
 - Greg Paradis (UBC)
-- Celine Boisvenue (NRCAN-CFS)
-- Steve Cumming (ULaval)
 - Ana Raymudo (ULaval)
-- Isolde Lane-Shaw (ULaval)
-- Alana Westwood (Dalhousie)
 - Jackie Saturno (Dalhousie)
+- Alana Westwood (Dalhousie)
 - Dene Nation
 
 ## Advisory Committee
 
-- Samuel Hache (ECCC-CWS)
-- Mathieu Leblond (ECCC-CWS)
-- Junior Tremblay (ECCC-CWS)
-- Andrea Norris
-- Tara Imlay
-- Lisa Mahon
-- James Hodson (GNWT)
-- Jean Polfus
+- S. Avery-Gomm
+- A. Calvert
+- S. Carriere
+- K. Clark
+- L. Coristine
+- A. Cox
+- D. Cyr
+- A. Dookie
+- I. Duclos
+- W. Easton
+- B. Frei
+- Z. Gadallah
+- M. Gahbauer
+- C. Haas
+- S. Hache (ECCC-CWS)
+- J. Hodson (GNWT)
+- T. Imlay
+- B. Laurich
+- M. Leblond (ECCC-CWS)
+- L. Mahon
+- O. Melnyk
+- E. Nichol
+- A. Norris
+- J. Olesenski
+- J. Polfus
+- E. Reed
+- J. Schroeder
+- L. Smith
+- R. Steenweg
+- B. Stewart
+- D. Stralberg
+- C. Toth
+- J. Tremblay (ECCC-CWS)
+- S. Van Wilgenburg
