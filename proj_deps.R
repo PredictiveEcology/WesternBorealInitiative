@@ -16,3 +16,6 @@ sankeyNetwork(Links = wbi_deps,
               Value = "weight",
               NodeID = "name",
               NodeGroup = "type")
+
+## for customization tips/trick, see
+## https://www.r-graph-gallery.com/322-custom-colours-in-sankey-diagram.html
