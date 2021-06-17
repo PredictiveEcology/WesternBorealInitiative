@@ -1,0 +1,10 @@
+name: "Western Boreal Initiative"
+navbar:
+  title: "Western Boreal Initiative"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Project Team"
+      href: team.html
+    - text: "SpaDES"
+      href: SpaDES.html
