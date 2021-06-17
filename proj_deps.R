@@ -5,7 +5,8 @@ finfo <- drive_download(file = as_id("1_WETMmM7SCiHYjo6GhJtrCVnHxBywan9twM0pdRWR
                         overwrite = TRUE) ## always fetch most recent version
 wbi_deps <- read_excel(finfo$local_path)
 
-nodes <- unique(data.frame(name = c(wbi_deps$from, wbi_deps$to)))
+nodes <- unique(data.frame(name = c(wbi_deps$from, wbi_deps$to),
+                           type = c(wbi_deps$fromType, wbi_deps$toType)))
 wbi_deps$IDsource <- match(wbi_deps$from, nodes$name) - 1 ## zero-indexed
 wbi_deps$IDtarget <- match(wbi_deps$to, nodes$name) - 1 ## zero-indexed
 sankeyNetwork(Links = wbi_deps,
@@ -13,4 +14,5 @@ sankeyNetwork(Links = wbi_deps,
               Source = "IDsource",
               Target = "IDtarget",
               Value = "weight",
-              NodeID = "name")
+              NodeID = "name",
+              NodeGroup = "type")
