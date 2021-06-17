@@ -2,12 +2,21 @@
 title: "Project Team"
 ---
 
-Th Western Boreal Initiative is a collaborative co-production between multiple government agencies, university researchers, and indigenous groups.
+The Western Boreal Initiative is a collaborative co-production between multiple government agencies, university researchers, and indigenous groups.
 
 ## Project Leads
 
 - Samuel Hache (ECCC-CWS)
+- Mathieu Leblond (ECCC-CWS)
+- Junior Tremblay (ECCC-CWS)
 - Eliot McIntire (NRCAN-CFS)
+- Tati Micheletti (UBC)
+
+## Funding
+
+- NRCAN-CFS
+- ECCC-CWS
+- ECCC-STB
 
 ## Implementation Team
 
@@ -17,10 +26,21 @@ Th Western Boreal Initiative is a collaborative co-production between multiple g
 - Ian Eddy (NRCAN-CFS)
 - Ceres Barros (UBC)
 - Greg Paradis (UBC)
+- Celine Boisvenue (NRCAN-CFS)
 - Steve Cumming (ULaval)
 - Ana Raymudo (ULaval)
 - Isolde Lane-Shaw (ULaval)
+- Alana Westwood (Dalhousie)
+- Jackie Saturno (Dalhousie)
+- Dene Nation
 
 ## Advisory Committee
 
 - Samuel Hache (ECCC-CWS)
+- Mathieu Leblond (ECCC-CWS)
+- Junior Tremblay (ECCC-CWS)
+- Andrea Norris
+- Tara Imlay
+- Lisa Mahon
+- James Hodson (GNWT)
+- Jean Polfus
