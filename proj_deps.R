@@ -15,7 +15,9 @@ sankeyNetwork(Links = wbi_deps,
               Target = "IDtarget",
               Value = "weight",
               NodeID = "name",
-              NodeGroup = "type")
+              NodeGroup = "type",
+              fontSize = 16,
+              fontFamily = "Arial")
 
 ## for customization tips/trick, see
 ## https://www.r-graph-gallery.com/322-custom-colours-in-sankey-diagram.html
