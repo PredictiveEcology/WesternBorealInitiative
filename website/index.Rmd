@@ -29,4 +29,4 @@ This toolkit will be built with flexible, interoperable, scientifically-based mo
 The management context and paradigms that we are working within includes Cumulative Effects, The Pan-Canadian Framework on Clean Growth and Climate Change, Sustainable Forest Management, Multi-species Management, and Indigenous Co-production and Knowledge.
 We divide this larger objective into a series of sub-objectives that will address specific elements.
 
-![](https://github.com/PredictiveEcology/WesternBorealInitiative/raw/master/figures/WesternBorealArrowsDiagram.png)
+![](https://github.com/PredictiveEcology/WesternBorealInitiative/raw/master/figures/WBI_Management_Updated.jpg)
