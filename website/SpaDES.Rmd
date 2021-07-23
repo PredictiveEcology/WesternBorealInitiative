@@ -14,3 +14,10 @@ All these are unique advantages of the `SpaDES` platform over other graphical us
 The modular and open approach that `SpaDES` speeds up scientific collaboration, as "interoperable" modules can be developed in parallel in many research groups.
 Similarly, with a single interoperable framework, `SpaDES` promotes the use of tools for generating user friendly web apps to visualize and understand cumulative effects.
 With over 22,000 downloads and 37 independently developed modules and counting, `SpaDES` is a Canadian product rapidly increasing in use across multiple scientific communities.
+
+## Code development
+
+All project code will be publicly available from <https://github.com/PredictiveEcology/WBI_forecasts>.
+
+This repository contains all code necessary to run the simulations and analyze the results of the models.
+
