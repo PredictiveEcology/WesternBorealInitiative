@@ -34,7 +34,7 @@ The management context and paradigms that we are working within includes Cumulat
 We divide this larger objective into a series of sub-objectives that will address specific elements.
 
 <p>
-<img src="./figures/WesternBorealArrowsDiagram.png" align="right" width="480">
+<img src="https://github.com/PredictiveEcology/WBI_studyAreas/raw/main/figures/WesternBorealArrowsDiagram.png" align="right" width="480">
 </p>
 
 ### [`SpaDES`](https://spades.predictiveecology.org)
