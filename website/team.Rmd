@@ -24,17 +24,15 @@ The Western Boreal Initiative is a collaborative co-production between multiple 
 
 ## Implementation Team
 
-+--------------------------------------------------+--------------------------------+-------------------+
-| -   Ceres Barros (UBC)                           | -   Greg Paradis (UBC)         |                   |
-| -   Celine Boisvenue (NRCAN-CFS)                 | -   Ana Raymudo (ULaval)       |                   |
-| -   Alex Chubaty (FOR-CAST Research & Analytics) | -   Jackie Saturno (Dalhousie) |                   |
-| -   Steve Cumming (ULaval)                       | -   Alana Westwood (Dalhousie) |                   |
-| -   Ian Eddy (NRCAN-CFS)                         | -   Dene Nation                |                   |
-| -   Josie Hughes (ECCC-STB)                      |                                |                   |
-| -   Isolde Lane-Shaw (ULaval)                    |                                |                   |
-| -   Eliot McIntire (NRCAN-CFS)                   |                                |                   |
-| -   Tati Micheletti (UBC)                        |                                |                   |
-+--------------------------------------------------+--------------------------------+-------------------+
++--------------------------------------------------+--------------------------------+------------+
+| -   Ceres Barros (UBC)                           | -   Eliot McIntire (NRCAN-CFS) |            |
+| -   Celine Boisvenue (NRCAN-CFS)                 | -   Tati Micheletti (UBC)      |            |
+| -   Alex Chubaty (FOR-CAST Research & Analytics) | -   Greg Paradis (UBC)         |            |
+| -   Steve Cumming (ULaval)                       | -   Ana Raymudo (ULaval)       |            |
+| -   Ian Eddy (NRCAN-CFS)                         | -   Jackie Saturno (Dalhousie) |            |
+| -   Josie Hughes (ECCC-STB)                      | -   Alana Westwood (Dalhousie) |            |
+| -   Isolde Lane-Shaw (ULaval)                    | -   Dene Nation                |            |
++--------------------------------------------------+--------------------------------+------------+
 
 ## Advisory Committee
 
