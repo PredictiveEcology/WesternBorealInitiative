@@ -8,7 +8,7 @@ Moreover, such a framework allows for diverse models generated from previously s
 In other words, due to the flexibility and transparency of being built in R, `SpaDES` empowers domain experts to build models with or without involving programmers to translate ecological mechanisms into code.
 With the `SpaDES` platform "modules" of any sort can be created (i.e., any coherent idea or concept, such as "harmonize all data layers", "estimate parameters for fire module", "forest succession", "forest harvesting", "carbon accounting", "caribou resource selection function prediction"), sometimes very quickly, and due to being compatible with R, they can be readily shared and integrated with other conceptually compatible modules (i.e. compute forest carbon pools and caribou resource selection while simulating harvesting on a dynamic landscape).
 
-![](https://github.com/PredictiveEcology/WesternBorealInitiative/raw/master/figures/WBI_Management_Updated.jpg)
+![](https://github.com/PredictiveEcology/WBI_studyAreas/raw/main/figures/WBI_Management_Updated.jpg)
 
 All these are unique advantages of the `SpaDES` platform over other graphical user interface, or black-box software.
 The modular and open approach that `SpaDES` speeds up scientific collaboration, as "interoperable" modules can be developed in parallel in many research groups.
