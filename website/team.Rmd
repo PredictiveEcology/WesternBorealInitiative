@@ -2,72 +2,53 @@
 title: "Project Team"
 ---
 
-The Western Boreal Initiative is a collaborative co-production between multiple government agencies, university researchers, and indigenous groups.
-
-## Project Leads
-
-- Samuel Hache (ECCC-CWS)
-- Mathieu Leblond (ECCC-CWS)
-- Junior Tremblay (ECCC-CWS)
-- Eliot McIntire (NRCAN-CFS)
-- Tati Micheletti (UBC)
+![](images/dene_canada_afn.png)
 
 ## Funding
 
-- NRCAN-CFS
-- ECCC-CWS
-- ECCC-STB
+The Western Boreal Initiative is a collaborative co-production between multiple government agencies, university researchers, and indigenous groups.
+
+-   Natural Resources Canada, Canadian Forest Service (NRCAN-CFS)
+-   Environment and Climate Change Canada, Canadian Wildife Service (ECCC-CWS)
+-   Environment and Climate Change Canada, Science and Technology Branch (ECCC-STB)
+
+## Project Leads
+
++--------------------------------+------------------+------------------+
+| -   Samuel Hache (ECCC-CWS)    |                  |                  |
+| -   Mathieu Leblond (ECCC-CWS) |                  |                  |
+| -   Junior Tremblay (ECCC-CWS) |                  |                  |
+| -   Eliot McIntire (NRCAN-CFS) |                  |                  |
+| -   Tati Micheletti (UBC)      |                  |                  |
++--------------------------------+------------------+------------------+
 
 ## Implementation Team
 
-- Ceres Barros (UBC)
-- Celine Boisvenue (NRCAN-CFS)
-- Alex Chubaty (FOR-CAST Research & Analytics)
-- Steve Cumming (ULaval)
-- Ian Eddy (NRCAN-CFS)
-- Josie Hughes (ECCC-STB)
-- Isolde Lane-Shaw (ULaval)
-- Eliot McIntire (NRCAN-CFS)
-- Tati Micheletti (UBC)
-- Greg Paradis (UBC)
-- Ana Raymudo (ULaval)
-- Jackie Saturno (Dalhousie)
-- Alana Westwood (Dalhousie)
-- Dene Nation
++--------------------------------------------------+--------------------------------+-------------------+
+| -   Ceres Barros (UBC)                           | -   Greg Paradis (UBC)         |                   |
+| -   Celine Boisvenue (NRCAN-CFS)                 | -   Ana Raymudo (ULaval)       |                   |
+| -   Alex Chubaty (FOR-CAST Research & Analytics) | -   Jackie Saturno (Dalhousie) |                   |
+| -   Steve Cumming (ULaval)                       | -   Alana Westwood (Dalhousie) |                   |
+| -   Ian Eddy (NRCAN-CFS)                         | -   Dene Nation                |                   |
+| -   Josie Hughes (ECCC-STB)                      |                                |                   |
+| -   Isolde Lane-Shaw (ULaval)                    |                                |                   |
+| -   Eliot McIntire (NRCAN-CFS)                   |                                |                   |
+| -   Tati Micheletti (UBC)                        |                                |                   |
++--------------------------------------------------+--------------------------------+-------------------+
 
 ## Advisory Committee
 
-- S. Avery-Gomm
-- A. Calvert
-- S. Carriere
-- K. Clark
-- L. Coristine
-- A. Cox
-- D. Cyr
-- A. Dookie
-- I. Duclos
-- W. Easton
-- B. Frei
-- Z. Gadallah
-- M. Gahbauer
-- C. Haas
-- S. Hache (ECCC-CWS)
-- J. Hodson (GNWT)
-- T. Imlay
-- B. Laurich
-- M. Leblond (ECCC-CWS)
-- L. Mahon
-- O. Melnyk
-- E. Nichol
-- A. Norris
-- J. Olesenski
-- J. Polfus
-- E. Reed
-- J. Schroeder
-- L. Smith
-- R. Steenweg
-- B. Stewart
-- D. Stralberg
-- C. Toth
-- J. Tremblay (ECCC-CWS)
-- S. Van Wilgenburg
++-------------------+---------------------------+----------------------------+
+| -   S. Avery-Gomm | -   Z. Gadallah           | -   J. Olesenski           |
+| -   A. Calvert    | -   M. Gahbauer           | -   J. Polfus              |
+| -   S. Carriere   | -   C. Haas               | -   E. Reed                |
+| -   K. Clark      | -   S. Hache (ECCC-CWS)   | -   J. Schroeder           |
+| -   L. Coristine  | -   J. Hodson (GNWT)      | -   L. Smith               |
+| -   A. Cox        | -   T. Imlay              | -   R. Steenweg            |
+| -   D. Cyr        | -   B. Laurich            | -   B. Stewart             |
+| -   A. Dookie     | -   M. Leblond (ECCC-CWS) | -   D. Stralberg           |
+| -   I. Duclos     | -   L. Mahon              | -   C. Toth                |
+| -   W. Easton     | -   O. Melnyk             | -   J. Tremblay (ECCC-CWS) |
+| -   B. Frei       | -   E. Nichol             | -   S. Van Wilgenburg      |
+|                   | -   A. Norris             |                            |
++-------------------+---------------------------+----------------------------+
