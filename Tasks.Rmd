@@ -1,0 +1,92 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r pressure, echo=FALSE, warning=FALSE, message=FALSE}
+
+if (!require("Require")) {install.packages("Require"); require("Require")}
+a <- Require(c("data.table", "googledrive","data.tree", "treemap",  # "DiagrammeR",
+          "googlesheets4", "networkD3", #"ClustOfVar", "cluster", "ggraph", 
+          "collapsibleTree", "rsconnect",
+          "RColorBrewer"))
+
+gs4_auth("eliotmcintire@gmail.com")
+
+ss <- gs4_get(as_id("https://docs.google.com/spreadsheets/d/1IB1N2GEotMcwtzaOxVU52AY8YGtOx4MOIbXuqltFsbQ/edit?usp=sharing"))
+llOrig <- range_read(ss, sheet = "Task Entry", range = "A2:T")
+topLevel <- as.data.table(range_read(ss, sheet = "Statuses", range = "b1:d"))
+
+
+ll <- as.data.frame(lapply(llOrig, function(x) substr(x, 1, 30)))
+colnames(ll) <- colnames(llOrig)
+ll <- as.data.table(ll)
+
+WBI <- copy(ll)
+WBI <- WBI[!is.na(WBI$`Deliverable Item`)]
+WBI <- rbindlist(list(WBI, topLevel), use.names = TRUE, fill = TRUE)
+colOrder <- c("Deliverable Item", "Parent Group", "Contract Name", "Source")# "Contractor")#,
+
+prepareCT <- function(dt, colOrder, topName = "WBI", attributes = TRUE, ...) {
+  colOrder <- rev(colOrder)
+
+  dtOrig <- copy(dt)
+  dt <- data.table(from = character(), to = character())
+  attrColNames <- NULL
+  if (isTRUE(attributes)) {
+    attrColNames <- setdiff(colnames(dtOrig), colOrder)
+    dt <- cbind(dt, dtOrig[0][, ..attrColNames])
+  }
+  for (i in seq(length(colOrder) - 1)) {
+    co <- c(colOrder[(i):(i+1)])
+    co2 <- c(co, attrColNames)
+    dups <- duplicated(dtOrig[, ..co])
+    nas <- apply(dtOrig[, ..co], 1, function(x) any(is.na(x)))
+    dt <- rbindlist(list(dt, dtOrig[!dups & !nas][, ..co2]), use.names = FALSE)
+  }
+
+  # Make 1 entry with NA with topName
+  createTopLevelWBINA <- data.table(`from` = NA, `to` = topName)#, Contractor = "SamAndEliot")
+
+  # Create full dataset
+  dt <- rbindlist(list(dt, createTopLevelWBINA), use.names = TRUE, fill = TRUE)
+
+  # remove cases where the 2 columns are identical
+  dt1 <- dt[!apply(dt[, c("from", "to")], 1, function(x) length(unique(x))==1)]
+
+  dt1[]
+}
+
+
+dt1 <- prepareCT(WBI, colOrder)
+
+dt1[is.na(Contractor), Contractor := "Sam and Eliot"]
+
+dt1[, Color := colorspace::rainbow_hcl(length(unique(Contractor)))[as.integer(factor(Contractor))]]
+setnames(dt1, "Contractor", "Responsible")
+dt1[Responsible == "Alex Chubaty", email := "achubaty@for-cast.ca"]
+dt1[Responsible == "Eliot McIntire", email := "eliotmcintire@gmail.com"]
+dt1[Responsible == "Tati Micheletti", email := "tati.micheletti@gmail.com"]
+
+# levels(dt1$Color) <- colorspace::rainbow_hcl(5)
+dt1[, url := paste0("https://0.gravatar.com/avatar/",
+                        sapply(email, digest::digest, algo = "md5", serialize = FALSE),"=100")]
+dt1[Responsible == "Greg Paradis", url := paste0('https://0.academia-photos.com/7428022/2721223/18069935/s200_gregory.paradis.jpg')]
+dt1[, tooltip := paste0('Responsible:',Responsible, '<br><img src="',url, '" width="50" height="50" />')]
+
+dt1[, Amount:=as.integer(dt1$`Amount (without ICR)`)/10000]
+dt1[is.na(Amount), Amount := 1]
+collapsibleTreeNetwork(dt1, collapsed = FALSE, fill = "Color",
+                       nodeSize = "Amount",
+                       tooltipHtml = "tooltip",
+                       attribute = "Responsible",
+                       height = 1200, width = 1800)
+# https://api.rpubs.com/api/v1/document/809299/1479603cec7d40a7bcf60960498d4981
+```
+
+
