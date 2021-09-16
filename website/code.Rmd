@@ -1,0 +1,7 @@
+---
+title: "Project code"
+---
+
+All project code will be publicly available from <https://github.com/PredictiveEcology/WBI_forecasts>.
+
+This repository contains all code necessary to run the simulations and analyze the results of the models.

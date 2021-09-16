@@ -13,7 +13,7 @@ This Western Boreal Initiative represents an ambitious spatial expansion and div
 
 ## Project Highlights
 
-![](https://github.com/PredictiveEcology/WesternBorealInitiative/raw/master/figures/WBI_studyArea_gg.png)
+![](https://github.com/PredictiveEcology/WBI_studyAreas/raw/main/figures/WBI_studyArea_gg.png)
 
 The proposed project will integrate the best available data, meta-modeling tools, a diverse array of domain experts, and ongoing stakeholder engagement to evaluate the cumulative effects of wildfire, key pests, and anthropogenic disturbances, and climate change on forest values in the Western Boreal Forests of Canada.
 Working with scientists, foresters, provincial and territorial governments, Indigenous Peoples, and other stakeholders, we will provide forecasts of future forest conditions and interpretations of ecological and socio-economic indicators, as well as how these compare to various thresholds and targets.
@@ -28,5 +28,3 @@ At the highest level, our objective is to build a powerful and generic toolkit f
 This toolkit will be built with flexible, interoperable, scientifically-based models and data and allow for a new generation of integrated answers to ongoing management questions.
 The management context and paradigms that we are working within includes Cumulative Effects, The Pan-Canadian Framework on Clean Growth and Climate Change, Sustainable Forest Management, Multi-species Management, and Indigenous Co-production and Knowledge.
 We divide this larger objective into a series of sub-objectives that will address specific elements.
-
-![](https://github.com/PredictiveEcology/WesternBorealInitiative/raw/master/figures/WesternBorealArrowsDiagram.png)

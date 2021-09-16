@@ -1,5 +1,5 @@
 <p>
-<img src="./figures/SpaDES_CS.png" align="right" width="60">
+<img src="https://github.com/PredictiveEcology/WBI_studyAreas/raw/main//figures/SpaDES_CS.png" align="right" width="60">
 </p>
 
 ## Western Boreal Initiative
@@ -16,7 +16,7 @@ This Western Boreal Initiative represents an ambitious spatial expansion and div
 ### Project Highlights
 
 <p>
-<img src="./figures/StudyAreaWBI.png" align="right">
+<img src="https://github.com/PredictiveEcology/WBI_studyAreas/raw/main/figures/StudyAreaWBI.png" align="right">
 </p>
 
 The proposed project will integrate the best available data, meta-modeling tools, a diverse array of domain experts, and ongoing stakeholder engagement to evaluate the cumulative effects of wildfire, key pests, and anthropogenic disturbances, and climate change on forest values in the Western Boreal Forests of Canada.
@@ -34,7 +34,7 @@ The management context and paradigms that we are working within includes Cumulat
 We divide this larger objective into a series of sub-objectives that will address specific elements.
 
 <p>
-<img src="./figures/WesternBorealArrowsDiagram.png" align="right" width="480">
+<img src="https://github.com/PredictiveEcology/WBI_studyAreas/raw/main/figures/WesternBorealArrowsDiagram.png" align="right" width="480">
 </p>
 
 ### [`SpaDES`](https://spades.predictiveecology.org)
