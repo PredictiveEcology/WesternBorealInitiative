@@ -1,5 +1,8 @@
 ---
 title: "Project Team"
+bibliography: bibliography.bib
+biblio-style: mee
+csl: mee.csl
 ---
 
 ![](images/dene_canada_afn.png)
