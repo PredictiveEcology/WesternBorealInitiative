@@ -57,6 +57,28 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 
 
@@ -271,13 +293,30 @@ $(document).ready(function () {
 </div>
 
 
-<p>This project is being developed using a foundational and predictive system for geospatial simulation - the <a href="https://spades.predictiveecology.org"><code>SpaDES</code></a> family of R packages (Chubaty and McIntire 2019a, McIntire et al., in prep). Our approach facilitates findable, accessible, interoperable and reusable science, paramount for conducting landscape modeling and prediction in ecology (Keane et al. 2015, Dietze et al. 2018, Stall et al. 2019). Moreover, such a framework allows for diverse models generated from previously siloed areas of expertise to be integrated into a continuous, adaptable and reusable workflow, directly conducting a cumulative effects analysis over large spatial extents. In other words, due to the flexibility and transparency of being built in R, <code>SpaDES</code> empowers domain experts to build models with or without involving programmers to translate ecological mechanisms into code. With the <code>SpaDES</code> platform “modules” of any sort can be created (i.e., any coherent idea or concept, such as “harmonize all data layers”, “estimate parameters for fire module”, “forest succession”, “forest harvesting”, “carbon accounting”, “caribou resource selection function prediction”), sometimes very quickly, and due to being compatible with R, they can be readily shared and integrated with other conceptually compatible modules (i.e. compute forest carbon pools and caribou resource selection while simulating harvesting on a dynamic landscape).</p>
+<p>This project is being developed using a foundational and predictive system for geospatial simulation - the <a href="https://spades.predictiveecology.org"><code>SpaDES</code></a> family of R packages <span class="citation">(Chubaty &amp; McIntire, 2021; McIntire et al., 2022)</span>. Our approach facilitates findable, accessible, interoperable and reusable science, paramount for conducting landscape modeling and prediction in ecology <span class="citation">(Keane et al., 2015; Dietze et al., 2018; Stall et al., 2019)</span>. Moreover, such a framework allows for diverse models generated from previously siloed areas of expertise to be integrated into a continuous, adaptable and reusable workflow, directly conducting a cumulative effects analysis over large spatial extents. In other words, due to the flexibility and transparency of being built in R, <code>SpaDES</code> empowers domain experts to build models with or without involving programmers to translate ecological mechanisms into code. With the <code>SpaDES</code> platform “modules” of any sort can be created (i.e., any coherent idea or concept, such as “harmonize all data layers”, “estimate parameters for fire module”, “forest succession”, “forest harvesting”, “carbon accounting”, “caribou resource selection function prediction”), sometimes very quickly, and due to being compatible with R, they can be readily shared and integrated with other conceptually compatible modules (i.e. compute forest carbon pools and caribou resource selection while simulating harvesting on a dynamic landscape).</p>
 <p><img src="https://github.com/PredictiveEcology/WBI_studyAreas/raw/main/figures/WBI_Management_Updated.jpg" /></p>
 <p>All these are unique advantages of the <code>SpaDES</code> platform over other graphical user interface, or black-box software. The modular and open approach that <code>SpaDES</code> speeds up scientific collaboration, as “interoperable” modules can be developed in parallel in many research groups. Similarly, with a single interoperable framework, <code>SpaDES</code> promotes the use of tools for generating user friendly web apps to visualize and understand cumulative effects. With over 22,000 downloads and 37 independently developed modules and counting, <code>SpaDES</code> is a Canadian product rapidly increasing in use across multiple scientific communities.</p>
 <div id="code-development" class="section level2">
 <h2>Code development</h2>
 <p>All project code will be publicly available from <a href="https://github.com/PredictiveEcology/WBI_forecasts" class="uri">https://github.com/PredictiveEcology/WBI_forecasts</a>.</p>
 <p>This repository contains all code necessary to run the simulations and analyze the results of the models.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Chubaty:2021a" class="csl-entry">
+Chubaty, A. M., &amp; McIntire, E. J. B. (2021). <span>SpaDES</span>: <span>Develop</span> and <span>Run</span> <span>Spatially</span> <span>Explicit</span> <span>Discrete</span> <span>Event</span> <span>Simulation</span> <span>Models</span>. Retrieved from <a href="https://cran.r-project.org/package=SpaDES">https://cran.r-project.org/package=SpaDES</a>
+</div>
+<div id="ref-Dietze:2018" class="csl-entry">
+Dietze, M. C., Fox, A., Beck-Johnson, L. M., Betancourt, J. L., Hooten, M. B., Jarnevich, C. S., … White, E. P. (2018). Iterative near-term ecological forecasting: <span>Needs</span>, opportunities, and challenges. <em>Proceedings of the National Academy of Sciences</em>, 201710231. doi:<a href="https://doi.org/10.1073/pnas.1710231115">10.1073/pnas.1710231115</a>
+</div>
+<div id="ref-Keane:2015" class="csl-entry">
+Keane, R. E., McKenzie, D., Falk, D. A., Smithwick, E. A. H., Miller, C., &amp; Kellogg, L. K. B. (2015). Representing climate, disturbance, and vegetation interactions in landscape models. <em>Ecological Modelling</em>, <em>309-310</em>, 33–47. doi:<a href="https://doi.org/10.1016/j.ecolmodel.2015.04.009">10.1016/j.ecolmodel.2015.04.009</a>
+</div>
+<div id="ref-McIntire:2022" class="csl-entry">
+McIntire, E. J. B., Chubaty, A. M., Cumming, S. G., Andison, D., Barros, C., Boisvenue, C., … Stewart, F. E. C. (2022). Predictive <span>Ecology</span>: A re-imagined foundation and the tools for ecological models. <em>Ecology Letters</em>. doi:<a href="https://doi.org/10.1111/ele.13994">10.1111/ele.13994</a>
+</div>
+<div id="ref-Stall:2019" class="csl-entry">
+Stall, S., Yarmey, L., Cutcher-Gershenfeld, J., Hanson, B., Lehnert, K., Nosek, B., … Wyborn, L. (2019). Make scientific data <span>FAIR</span>. <em>Nature</em>, <em>570</em>(7759), 27–29. doi:<a href="https://doi.org/10.1038/d41586-019-01720-7">10.1038/d41586-019-01720-7</a>
+</div>
+</div>
 </div>
 
 
