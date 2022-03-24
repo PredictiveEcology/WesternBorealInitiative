@@ -18,7 +18,7 @@ This Western Boreal Initiative represents an ambitious spatial expansion and div
 The proposed project will integrate the best available data, meta-modeling tools, a diverse array of domain experts, and ongoing stakeholder engagement to evaluate the cumulative effects of wildfire, key pests, and anthropogenic disturbances, and climate change on forest values in the Western Boreal Forests of Canada.
 Working with scientists, foresters, provincial and territorial governments, Indigenous Peoples, and other stakeholders, we will provide forecasts of future forest conditions and interpretations of ecological and socio-economic indicators, as well as how these compare to various thresholds and targets.
 When these indicators are forecasted to pass their respective thresholds and targets, we will quantify the trade-offs with other values, and attempt to identify solutions through optimization that maximize synergies and minimize negative trade-offs.
-Key values we will evaluate are economic values related to forestry, conservation values of established ECCC priority places, protected areas, and National Parks, and Species at Risk, including woodland caribou, and the forest carbon consequences.
+Key values we will evaluate are economic values related to forestry, conservation values of established protected areas, National Parks, Species at Risk (including boreal and woodland caribou), Environment and Climate Change Canada priority places and the implication on forest carbon.
 This work will support multi-species management objectives and the Pan Canadian Framework on Clean Growth and Climate Change.
 
 ## Objectives
