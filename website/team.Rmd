@@ -17,13 +17,13 @@ The Western Boreal Initiative is a collaborative co-production between multiple 
 
 ## Project Leads
 
-+--------------------------------+------------------+------------------+
-| -   Samuel Hache (ECCC-CWS)    |                  |                  |
-| -   Eliot McIntire (NRCAN-CFS) |                  |                  |
-| -   Mathieu Leblond (ECCC-CWS) |                  |                  |
-| -   Junior Tremblay (ECCC-CWS) |                  |                  |
-| -   Tati Micheletti (UBC)      |                  |                  |
-+--------------------------------+------------------+------------------+
++--------------------------------+--------------------------+------------------+
+| -   Samuel Hache (ECCC-CWS)    | Advisory Team Lead       |                  |
+| -   Eliot McIntire (NRCAN-CFS) | Implementation Team Lead |                  |
+| -   Mathieu Leblond (ECCC-CWS) |                          |                  |
+| -   Junior Tremblay (ECCC-CWS) |                          |                  |
+| -   Tati Micheletti (UBC)      |                          |                  |
++--------------------------------+--------------------------+------------------+
 
 ## Implementation Team
 
