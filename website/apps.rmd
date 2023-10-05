@@ -1,0 +1,11 @@
+---
+title: "Web Applications"
+bibliography: bibliography.bib
+biblio-style: mee
+csl: mee.csl
+---
+
+As part of the Western Boreal Project, we developed web applications to facilitate the understanding of the results of the project through interactive visualizations.
+
+- [Western Boreal Project: Full Extent](https://wbi.predictiveecology.org/apps/wbi/)
+- [Western Boreal Project: Northwest Territories](https://wbi.predictiveecology.org/apps/nwt/)

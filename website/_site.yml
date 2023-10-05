@@ -8,4 +8,6 @@ navbar:
       href: team.html
     - text: "SpaDES"
       href: SpaDES.html
+    - text: "Apps"
+      href: apps.html
 output_dir: ../docs
