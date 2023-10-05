@@ -19,9 +19,9 @@ The Western Boreal Initiative is a collaborative co-production between multiple 
 
 +--------------------------------+------------------+------------------+
 | -   Samuel Hache (ECCC-CWS)    |                  |                  |
+| -   Eliot McIntire (NRCAN-CFS) |                  |                  |
 | -   Mathieu Leblond (ECCC-CWS) |                  |                  |
 | -   Junior Tremblay (ECCC-CWS) |                  |                  |
-| -   Eliot McIntire (NRCAN-CFS) |                  |                  |
 | -   Tati Micheletti (UBC)      |                  |                  |
 +--------------------------------+------------------+------------------+
 
@@ -35,6 +35,7 @@ The Western Boreal Initiative is a collaborative co-production between multiple 
 | -   Ian Eddy (NRCAN-CFS)                         | -   Jackie Saturno (Dalhousie) |            |
 | -   Josie Hughes (ECCC-STB)                      | -   Alana Westwood (Dalhousie) |            |
 | -   Isolde Lane-Shaw (ULaval)                    | -   Dene Nation                |            |
+| -   Frances Stewart (LaurierU)                   |                                |            |
 +--------------------------------------------------+--------------------------------+------------+
 
 ## Advisory Committee
