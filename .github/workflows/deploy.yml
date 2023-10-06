@@ -1,0 +1,17 @@
+name: 'Deploy static tontent to WBI server'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-with-webhook:
+    name: Deploy static content
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v3
+    - name: 'Trigger deploy webhook'
+      run: |
+        curl -i -X GET "http://wbi.predictiveecology.org:9000/hooks/deploy?token=${{secrets.WEBHOOK_SECRET}}"
