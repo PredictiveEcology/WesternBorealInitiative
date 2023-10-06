@@ -15,11 +15,7 @@ jobs:
     - name: 'Trigger deploy webhook'
       run: |
         response=$(curl "http://wbi.predictiveecology.org:9000/hooks/deploy?token=${{secrets.WEBHOOK_SECRET}}")
+        echo $response
         if [ $response != "Deploying content" ]; then
-            echo "Webhook not accepted:"
-            echo $response
             exit 1
-        else
-            echo "Webhook accepted:"
-            echo $response
         fi
