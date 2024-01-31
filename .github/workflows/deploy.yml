@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 'Checkout GitHub Action'
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: 'Trigger deploy webhook'
       run: |
         response=$(curl "http://wbi.predictiveecology.org:9000/hooks/deploy?token=${{secrets.WEBHOOK_SECRET}}")
