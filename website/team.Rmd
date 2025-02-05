@@ -48,9 +48,9 @@ The Western Boreal Initiative is a collaborative co-production between multiple 
 | -   L. Coristine  | -   J. Hodson (GNWT)      | -   L. Smith               |
 | -   A. Cox        | -   T. Imlay              | -   R. Steenweg            |
 | -   D. Cyr        | -   B. Laurich            | -   B. Stewart             |
-| -   A. Dookie     | -   M. Leblond (ECCC-CWS) | -   D. Stralberg           |
+| -   A. Dookie     | -   M. Leblond (ECCC-STB) | -   D. Stralberg           |
 | -   I. Duclos     | -   L. Mahon              | -   C. Toth                |
-| -   W. Easton     | -   O. Melnyk             | -   J. Tremblay (ECCC-CWS) |
+| -   W. Easton     | -   O. Melnyk             | -   J. Tremblay (ECCC-STB) |
 | -   B. Frei       | -   E. Nichol             | -   S. Van Wilgenburg      |
 |                   | -   A. Norris             |                            |
 +-------------------+---------------------------+----------------------------+
