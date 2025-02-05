@@ -4,5 +4,6 @@ od <- setwd("website")
 rmarkdown::render_site()
 setwd(od)
 # 3. check the site (./docs folder) in the browser
-# 4. if all looks good, commit the changes - this will trigger the GitHub action
-#    that deploys the content
+browseURL("docs/index.html")
+# 4. if all looks good, commit the changes
+# 5. this will trigger the GitHub action that deploys the content
