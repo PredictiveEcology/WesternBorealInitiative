@@ -20,4 +20,4 @@ jobs:
       run: |
         response=$(curl "http://wbi.predictiveecology.org:9000/hooks/deploy?token=${{secrets.WEBHOOK_SECRET}}")
         echo $response
-        [[ $response == "Deploying content" ]] || { exit 1; }
+        [[ $response == "Deploying static content" ]] || { exit 1; }
