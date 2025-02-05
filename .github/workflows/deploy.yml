@@ -1,9 +1,13 @@
-name: 'Deploy static tontent to WBI server'
+name: 'Deploy static content to WBI server'
+# see Deployment.R file for notes
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
+    paths: [ "docs/**"]
+  pull_request:
+    branches: [ "master" ]
+    paths: [ "docs/**"]
 
 jobs:
   deploy-with-webhook:
